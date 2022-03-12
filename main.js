@@ -16,25 +16,25 @@ recognition.addEventListener('result', (e)=>{
 
   p.innerText = text;
   if(e.results[0].isFinal){
-    if (text.includes('como estas')) {
+    if (text.includes('Cómo estás')) {
       p = document.createElement('p');
       p.classList.add('replay');
-      p.innerText = 'Yo estoy bien';
+      p.innerText = 'Estoy bien';
       texts.appendChild(p)
     }
-    if (text.includes("cual es tu nombre") || text.includes('cual es tu nombre')) {
+    if (text.includes("Cuál es tu nombre") || text.includes('Cuál es tu nombre')) {
       p = document.createElement('p');
       p.classList.add('replay');
-      p.innerText = 'Mi nombre es Cifar';
+      p.innerText = 'Mi nombre es Edgar García';
       texts.appendChild(p)
     }
-    if (text.includes('abre YouTube')) {
+    if (text.includes('Quiero ver Netflix')) {
       p = document.createElement('p');
       p.classList.add('replay');
-      p.innerText = 'abriendo canal';
+      p.innerText = 'Abriendo Netflix';
       texts.appendChild(p)
-      console.log('opening youtube')
-      window.open('https://www.youtube.com/channel/UCdxaLo9ALJgXgOUDURRPGiQ')
+      console.log('abriendo netflix')
+      window.open('https://www.netflix.com/mx/')
     }
     p = document.createElement('p');
   }
